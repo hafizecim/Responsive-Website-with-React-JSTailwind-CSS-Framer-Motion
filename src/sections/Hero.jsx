@@ -47,7 +47,20 @@ const Hero = () => {
       </motion.div>
     </motion.div>
  
+    <div className="w-[%40] flex flex-col justify-end items-end">
+        <motion.img
+        initial="hidden"
+        whileInView="visible"
+        variants={zoomInVariants} 
+        src={heroimg} alt="hero image" className="lg:h-[600px] h-[300px] lg:mb-[-100px]"
+        />
+            
+       
+
     </div>
+
+    </div>
+
   );
 };
 
