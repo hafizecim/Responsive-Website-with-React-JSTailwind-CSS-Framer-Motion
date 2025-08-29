@@ -24,7 +24,19 @@ const About = () => {
  
             </motion.div>
 
-            <motion.div>
+            <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={slideUpVariants}
+            className='lg:w-[40%] w-full flex flex-col justify-center items-start gap-6'>
+            
+            <p className='text-white text-lg text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellendus voluptatem eius dicta, tempore atque velit cum minus ut quidem architecto corrupti in, veritatis deserunt consequuntur. Accusantium esse porro placeat, ipsa ratione dolore culpa maiores tenetur laboriosam. Ex est eveniet hic corrupti. Voluptatibus itaque voluptate nulla laboriosam. Cumque sequi nihil quae quia neque corrupti nesciunt possimus. Architecto doloremque ullam molestiae quidem eos praesentium, velit minima facilis voluptas asperiores eaque accusantium ipsam dicta, ducimus officia repellendus vel quae laborum eligendi deserunt non. Assumenda molestias est molestiae fugit fuga, alias necessitatibus sequi quasi libero ex modi hic dignissimos facere et quisquam deleniti.</p>
+
+            <motion.button
+            variants={zoomInVariants}
+            className='bg-yellow-500 hover:bg-white  hover:text-black px-10 py-3 rounded-lg font-bold text-black'>
+                READ MORE
+            </motion.button>
 
             </motion.div>
         </div>
